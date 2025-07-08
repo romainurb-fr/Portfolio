@@ -65,7 +65,54 @@
       font-weight: bold;
       cursor: pointer;
     }
-  </style>
+  .project-row {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    background-color: #f8fafc;
+  }
+
+  .project-row .left {
+    flex: 1;
+    padding: 1.5rem;
+    min-width: 250px;
+  }
+
+  .project-row .right {
+    flex: 1;
+    min-width: 250px;
+  }
+
+  .project-row img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .project-row h4 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #1e293b;
+  }
+
+  .project-row a {
+    text-decoration: none;
+    color: #1e293b;
+  }
+
+  .project-row a:hover {
+    text-decoration: underline;
+  }
+
+  .project-row p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #334155;
+  }
+</style>
 </head>
 <body>
 
@@ -105,145 +152,142 @@
     <a href="#contact">Contact</a>
   </nav>
 
+<!-- 🔹 Projets – Section FR -->
 <section id="projets" class="lang" lang="fr">
   <h2>Projets</h2>
 
   <h3>Lors de Stage</h3>
-  <div class="project-grid">
-    <div class="project-card">
-      <a href="projet6.html">
-        <img src="img/projet6.jpg" alt="Projet 6">
-        <div class="text">
-          <h4>Optimisation de géométrie d'aile</h4>
-          <p>Modèle réduit / Python / CFD / CSM / Matériaux composites</p>
-        </div>
-      </a>
+  <div class="project-row">
+    <div class="left">
+      <h4><a href="projet6.html">Optimisation de géométrie d'aile</a></h4>
+      <p>Modèle réduit / Python / CFD / CSM / Matériaux composites</p>
+    </div>
+    <div class="right">
+      <img src="img/projet6.jpg" alt="Projet 6">
     </div>
   </div>
 
   <h3>Au sein de l'École Polytechnique Universitaire de Lyon :</h3>
-  <div class="project-grid">
-    <div class="project-card">
-      <a href="projet1.html">
-        <img src="img/projet1.jpg" alt="Projet 1">
-        <div class="text">
-          <h4>Étude vibratoire d'une pâle d'hélicoptère</h4>
-          <p>Modèle réduit / Rayleigh / Traction-Compression / Défaut de masse</p>
-        </div>
-      </a>
-    </div>
 
-    <div class="project-card">
-      <a href="projet2.html">
-        <img src="img/projet2.jpg" alt="Projet 2">
-        <div class="text">
-          <h4>Optimisation d'un capteur de recul</h4>
-          <p>Python / Optimisation / Capteurs / Méthodes numériques</p>
-        </div>
-      </a>
+  <div class="project-row">
+    <div class="left">
+      <h4><a href="projet1.html">Étude vibratoire d'une pâle d'hélicoptère</a></h4>
+      <p>Modèle réduit / Rayleigh / Traction-Compression / Défaut de masse</p>
     </div>
-
-    <div class="project-card">
-      <a href="projet3.html">
-        <img src="img/projet3.jpg" alt="Projet 3">
-        <div class="text">
-          <h4>Équation de la chaleur</h4>
-          <p>MATLAB / Équations différentielles / Méthodes numériques</p>
-        </div>
-      </a>
+    <div class="right">
+      <img src="img/projet1.jpg" alt="Projet 1">
     </div>
+  </div>
 
-    <div class="project-card">
-      <a href="projet4.html">
-        <img src="img/projet4.jpg" alt="Projet 4">
-        <div class="text">
-          <h4>Porte-bagages vélo</h4>
-          <p>CAO / CATIA</p>
-        </div>
-      </a>
+  <div class="project-row">
+    <div class="left">
+      <h4><a href="projet2.html">Optimisation d'un capteur de recul</a></h4>
+      <p>Python / Optimisation / Capteurs / Méthodes numériques</p>
     </div>
+    <div class="right">
+      <img src="img/projet2.jpg" alt="Projet 2">
+    </div>
+  </div>
 
-    <div class="project-card">
-      <a href="projet5.html">
-        <img src="img/projet5.jpg" alt="Projet 5">
-        <div class="text">
-          <h4>Problème à N-corps</h4>
-          <p>C++ / Simulation numérique / Monte Carlo</p>
-        </div>
-      </a>
+  <div class="project-row">
+    <div class="left">
+      <h4><a href="projet3.html">Équation de la chaleur</a></h4>
+      <p>MATLAB / Équations différentielles / Méthodes numériques</p>
+    </div>
+    <div class="right">
+      <img src="img/projet3.jpg" alt="Projet 3">
+    </div>
+  </div>
+
+  <div class="project-row">
+    <div class="left">
+      <h4><a href="projet4.html">Porte-bagages vélo</a></h4>
+      <p>CAO / CATIA</p>
+    </div>
+    <div class="right">
+      <img src="img/projet4.jpg" alt="Projet 4">
+    </div>
+  </div>
+
+  <div class="project-row">
+    <div class="left">
+      <h4><a href="projet5.html">Problème à N-corps</a></h4>
+      <p>C++ / Simulation numérique / Monte Carlo</p>
+    </div>
+    <div class="right">
+      <img src="img/projet5.jpg" alt="Projet 5">
     </div>
   </div>
 </section>
 
+<!-- 🔹 Projects – Section EN -->
 <section class="lang" lang="en">
   <h2>Projects</h2>
 
   <h3>Internship Project</h3>
-  <div class="project-grid">
-    <div class="project-card">
-      <a href="projet6.html">
-        <img src="img/projet6.jpg" alt="Project 6">
-        <div class="text">
-          <h4>Data-Driven Wing Geometry Optimization</h4>
-          <p>Reduced model / Python / CFD / CSM / Composite materials</p>
-        </div>
-      </a>
+  <div class="project-row">
+    <div class="left">
+      <h4><a href="projet6.html">Data-Driven Wing Geometry Optimization</a></h4>
+      <p>Reduced model / Python / CFD / CSM / Composite materials</p>
+    </div>
+    <div class="right">
+      <img src="img/projet6.jpg" alt="Project 6">
     </div>
   </div>
 
   <h3>At École Polytechnique Universitaire de Lyon:</h3>
-  <div class="project-grid">
-    <div class="project-card">
-      <a href="projet1.html">
-        <img src="img/projet1.jpg" alt="Project 1">
-        <div class="text">
-          <h4>Vibrational study of a helicopter blade</h4>
-          <p>Reduced model / Rayleigh method / Mass defect</p>
-        </div>
-      </a>
-    </div>
 
-    <div class="project-card">
-      <a href="projet2.html">
-        <img src="img/projet2.jpg" alt="Project 2">
-        <div class="text">
-          <h4>Optimization of a reversing sensor</h4>
-          <p>Python / Optimization / Sensors / Numerical methods</p>
-        </div>
-      </a>
+  <div class="project-row">
+    <div class="left">
+      <h4><a href="projet1.html">Vibrational study of a helicopter blade</a></h4>
+      <p>Reduced model / Rayleigh method / Vibration / Mass defect</p>
     </div>
-
-    <div class="project-card">
-      <a href="projet3.html">
-        <img src="img/projet3.jpg" alt="Project 3">
-        <div class="text">
-          <h4>Heat equation modeling</h4>
-          <p>MATLAB / PDEs / Numerical methods</p>
-        </div>
-      </a>
+    <div class="right">
+      <img src="img/projet1.jpg" alt="Project 1">
     </div>
+  </div>
 
-    <div class="project-card">
-      <a href="projet4.html">
-        <img src="img/projet4.jpg" alt="Project 4">
-        <div class="text">
-          <h4>Bike rack design</h4>
-          <p>CAD / CATIA</p>
-        </div>
-      </a>
+  <div class="project-row">
+    <div class="left">
+      <h4><a href="projet2.html">Optimization of a reversing sensor</a></h4>
+      <p>Python / Optimization / Sensors / Numerical methods</p>
     </div>
+    <div class="right">
+      <img src="img/projet2.jpg" alt="Project 2">
+    </div>
+  </div>
 
-    <div class="project-card">
-      <a href="projet5.html">
-        <img src="img/projet5.jpg" alt="Project 5">
-        <div class="text">
-          <h4>N-body problem simulation</h4>
-          <p>C++ / Numerical simulation / Monte Carlo methods</p>
-        </div>
-      </a>
+  <div class="project-row">
+    <div class="left">
+      <h4><a href="projet3.html">Heat equation modeling</a></h4>
+      <p>MATLAB / PDEs / Numerical methods</p>
+    </div>
+    <div class="right">
+      <img src="img/projet3.jpg" alt="Project 3">
+    </div>
+  </div>
+
+  <div class="project-row">
+    <div class="left">
+      <h4><a href="projet4.html">Bike rack design</a></h4>
+      <p>CAD / CATIA</p>
+    </div>
+    <div class="right">
+      <img src="img/projet4.jpg" alt="Project 4">
+    </div>
+  </div>
+
+  <div class="project-row">
+    <div class="left">
+      <h4><a href="projet5.html">N-body problem simulation</a></h4>
+      <p>C++ / Numerical simulation / Monte Carlo methods</p>
+    </div>
+    <div class="right">
+      <img src="img/projet5.jpg" alt="Project 5">
     </div>
   </div>
 </section>
+
 
   <!-- 🔹 Compétences -->
   <section id="competences" class="lang" lang="fr">
