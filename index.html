@@ -1,105 +1,129 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Romain Urbaniak – Portfolio</title>
+  <meta charset="UTF-8">
+  <title>Portfolio - Romain Urbaniak</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f5f7fa;
       margin: 0;
-      padding: 2rem;
-      color: #333;
+      scroll-behavior: smooth;
     }
 
     header {
+      background-color: #1e293b;
+      color: white;
+      padding: 2rem;
       text-align: center;
-      margin-bottom: 2rem;
     }
 
-    h1 {
-      color: #003366;
-      font-size: 2.5rem;
+    nav {
+      background-color: #334155;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
     }
 
-    p.subtitle {
-      font-size: 1.2rem;
-      color: #555;
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
     }
 
-    .project {
-      background-color: white;
-      border-radius: 10px;
-      padding: 1rem 1.5rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    section {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: auto;
     }
 
-    .project h2 {
-      margin-top: 0;
-      color: #003366;
+    h2 {
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 0.5rem;
     }
 
     footer {
+      background-color: #1e293b;
+      color: white;
       text-align: center;
+      padding: 1rem;
       margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #888;
     }
 
-    a {
-      color: #1e90ff;
+    a.button {
+      display: inline-block;
+      background-color: #3b82f6;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border-radius: 8px;
       text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
+      margin-top: 1rem;
     }
   </style>
 </head>
 <body>
-  <header>
+
+  <!-- 🔹 En-tête -->
+  <header id="accueil">
     <h1>Romain Urbaniak</h1>
-    <p class="subtitle">Étudiant ingénieur en mécanique – Université Lyon 1</p>
+    <p>Étudiant en ingénierie mécanique – Passionné par la mécanique des fluides</p>
   </header>
 
-  <section class="project">
-    <h2>🛩️ Stage à l'Université de Tohoku</h2>
-    <p>
-      Développement de modèles réduits pour la reconstruction de géométries d’ailes optimisées en matériaux composites.
-      Utilisation des méthodes <strong>POD</strong> et <strong>SOM</strong> pour la réduction d’ordre et validation par comparaisons <strong>CFD/CSM</strong>.
-    </p>
+  <!-- 🔹 Menu -->
+  <nav>
+    <a href="#projets">Projets</a>
+    <a href="#competences">Compétences</a>
+    <a href="#parcours">Parcours</a>
+    <a href="#cv">CV</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- 🔹 Section Projets -->
+  <section id="projets">
+    <h2>Projets</h2>
+    <ul>
+      <li>Projet 1 – <!-- Titre + petite description ici --></li>
+      <li>Projet 2 – <!-- Titre + petite description ici --></li>
+      <li>Projet 3 – <!-- Titre + petite description ici --></li>
+    </ul>
   </section>
 
-  <section class="project">
-    <h2>📈 Analyse vibratoire d'une pâle d’hélicoptère</h2>
-    <p>
-      Étude modale complète via méthodes numériques. Extraction des fréquences propres et visualisation des modes propres de flexion/torsion.
-    </p>
+  <!-- 🔹 Section Compétences -->
+  <section id="competences">
+    <h2>Compétences</h2>
+    <ul>
+      <li><strong>Logiciels :</strong> SolidWorks, CATIA, ANSYS</li>
+      <li><strong>Langages :</strong> Python, C, MATLAB, Arduino</li>
+      <li><strong>Langues :</strong> Français (natif), Anglais (C1), Japonais (en cours)</li>
+    </ul>
   </section>
 
-  <section class="project">
-    <h2>💻 Visualisation POD/SOM</h2>
-    <p>
-      Développement Python pour afficher les coefficients de modes et les paramètres aérodynamiques (Cl, Cd).
-      Utilisation de <code>matplotlib</code> et <code>scikit-learn</code> pour les cartes SOM.
-    </p>
+  <!-- 🔹 Section Parcours -->
+  <section id="parcours">
+    <h2>Parcours académique</h2>
+    <p><strong>École Polytechnique Universitaire de Lyon</strong> – Génie Mécanique (2021–2026)</p>
+    <p><!-- Autres diplômes ou échanges si besoin --></p>
   </section>
 
-  <section class="project">
-    <h2>📄 Mon CV</h2>
-    <p>
-      <a href="CV_Romain_Urbaniak.pdf" target="_blank"> CV français (PDF)</a>
-    </p>
-        <p>
-      <a href="CV_Romain_Urbaniak.pdf" target="_blank"> CV anglais (PDF)</a>
-    </p>
+  <!-- 🔹 Section CV -->
+  <section id="cv">
+    <h2>Mon CV</h2>
+    <p>Tu peux télécharger mon CV en cliquant ici :</p>
+    <a class="button" href="cv_romain_urbaniak.pdf" download>Télécharger mon CV</a>
+  </section>
+
+  <!-- 🔹 Section Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email : <a href="mailto:romainurbaniak@email.com">romainurbaniak@email.com</a></p>
+    <p>LinkedIn : <a href="https://www.linkedin.com/in/romainurbaniak/" target="_blank">linkedin.com/in/romainurbaniak</a></p>
+    <p>GitHub : <a href="https://github.com/romainurbaniak" target="_blank">github.com/romainurbaniak</a></p>
   </section>
 
   <footer>
-    Contact : <a href="mailto:romain.urbaniak@example.com">romain.urbaniak@example.com</a><br />
-    © 2025 Romain Urbaniak
+    &copy; 2025 Romain Urbaniak — Tous droits réservés
   </footer>
+
 </body>
 </html>
