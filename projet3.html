@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Projet 3 - eq chaleur </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: #1e293b;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #334155;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      border-bottom: 2px solid #e2e8f0;
+      padding-bottom: 0.5rem;
+    }
+    footer {
+      background-color: #1e293b;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+    a.button {
+      display: inline-block;
+      background-color: #3b82f6;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 1rem;
+    }
+    .lang { display: none; }
+    .lang.active { display: block; }
+  </style>
+</head>
+<body>
+
+<!-- 🔹 Version Française -->
+<div class="lang" lang="fr">
+  <header>
+    <h1>Modélisation et Résolution de l'équation de la chaleur</h1>
+    <a href="rapport/CR_Mnm.pdf" class="button">Télécharger le Rapport PDF (anglais)</a>
+    <p>Ce projet a été réalisé sur une durée de 4 mois dans le cadre de ma formation en Méthode Numérique pour Ingénieurs au sein de l'École Polytechnique Universitaire de Lyon.</p>
+  </header>
+
+  <nav>
+    <a href="#introduction">Introduction</a>
+    <a href="#methodologie">Méthodologie</a>
+    <a href="#resultats">Résultats</a>
+    <a href="#conclusion">Conclusion</a>
+  </nav>
+
+  <section id="introduction">
+    <h2>Introduction</h2>
+    <p></p>
+  </section>
+
+  <section id="methodologie">
+    <h2>Méthodologie</h2>
+    <p></p>
+  </section>
+
+  <section id="resultats">
+    <h2>Résultats</h2>
+  </section>
+
+  <section id="conclusion">
+    <h2>Conclusion</h2>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Romain Urbaniak. Tous droits réservés.</p>
+    <a href="index.html" class="button">Retour au Portfolio</a>
+  </footer>
+</div>
+
+<!-- 🔸 English Version -->
+<div class="lang" lang="en">
+  <header>
+    <h1>Modeling and Solving the Heat Equation</h1>
+    <a href="rapport/CR_Mnm.pdf" class="button">Download PDF Report (French only)</a>
+    <p>This project was carried out over a period of four months as part of my training in Numerical Methods for Engineers at the École Polytechnique Universitaire de Lyon.</p>
+  </header>
+
+  <nav>
+    <a href="#introduction">Introduction</a>
+    <a href="#methodology">Methodology</a>
+    <a href="#results">Results</a>
+    <a href="#conclusion">Conclusion</a>
+  </nav>
+
+  <section id="introduction">
+    <h2>Introduction</h2>
+  </section>
+
+  <section id="methodology">
+    <h2>Methodology</h2>
+  </section>
+
+  <section id="results">
+    <h2>Results</h2>
+  </section>
+
+  <section id="conclusion">
+    <h2>Conclusion</h2>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Romain Urbaniak. All rights reserved.</p>
+    <a href="index.html" class="button">Back to Portfolio</a>
+  </footer>
+</div>
+
+<!-- 🔁 Script pour afficher automatiquement la langue choisie -->
+<script>
+  const lang = localStorage.getItem('lang') || 'fr';
+  document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll(`[lang="${lang}"]`).forEach(el => el.classList.add('active'));
+</script>
+
+</body>
+</html>
