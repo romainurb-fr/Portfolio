@@ -5,66 +5,78 @@
   <title>Portfolio - Romain Urbaniak</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      scroll-behavior: smooth;
-    }
-    header {
-      background-color: #1e293b;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    nav {
-      background-color: #334155;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem 0;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 4rem 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      border-bottom: 2px solid #e2e8f0;
-      padding-bottom: 0.5rem;
-    }
-    footer {
-      background-color: #1e293b;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 3rem;
-    }
-    a.button {
-      display: inline-block;
-      background-color: #3b82f6;
-      color: white;
-      padding: 0.7rem 1.5rem;
-      border-radius: 8px;
-      text-decoration: none;
-      margin-top: 1rem;
-    }
-    .lang { display: none; }
-    .lang.active { display: block; }
-    .lang-switch {
-      text-align: center;
-      padding: 1rem;
-    }
-    .lang-switch button {
-      margin: 0 0.5rem;
-      padding: 0.5rem 1rem;
-      font-weight: bold;
-      cursor: pointer;
-    }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+
+  header {
+    background-color: #1e293b;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  nav {
+    background-color: #334155;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 0;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  h2 {
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 0.5rem;
+  }
+
+  footer {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+  }
+
+  a.button {
+    display: inline-block;
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 1rem;
+  }
+
+  .lang { display: none; }
+  .lang.active { display: block; }
+
+  .lang-switch {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .lang-switch button {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  /* 💡 Projet en 2 colonnes avec alternance */
   .project-row {
     display: flex;
     flex-wrap: wrap;
@@ -75,14 +87,14 @@
     background-color: #f8fafc;
   }
 
-  .project-row .left {
-    flex: 1;
-    padding: 1.5rem;
-    min-width: 250px;
+  .project-row:nth-child(even) {
+    flex-direction: row-reverse;
   }
 
+  .project-row .left,
   .project-row .right {
     flex: 1;
+    padding: 1.5rem;
     min-width: 250px;
   }
 
