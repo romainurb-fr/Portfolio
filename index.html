@@ -10,14 +10,12 @@
       margin: 0;
       scroll-behavior: smooth;
     }
-
     header {
       background-color: #1e293b;
       color: white;
       padding: 2rem;
       text-align: center;
     }
-
     nav {
       background-color: #334155;
       display: flex;
@@ -25,24 +23,20 @@
       gap: 2rem;
       padding: 1rem 0;
     }
-
     nav a {
       color: white;
       text-decoration: none;
       font-weight: bold;
     }
-
     section {
       padding: 4rem 2rem;
       max-width: 900px;
       margin: auto;
     }
-
     h2 {
       border-bottom: 2px solid #e2e8f0;
       padding-bottom: 0.5rem;
     }
-
     footer {
       background-color: #1e293b;
       color: white;
@@ -50,7 +44,6 @@
       padding: 1rem;
       margin-top: 3rem;
     }
-
     a.button {
       display: inline-block;
       background-color: #3b82f6;
@@ -60,103 +53,171 @@
       text-decoration: none;
       margin-top: 1rem;
     }
+    .lang { display: none; }
+    .lang.active { display: block; }
+    .lang-switch {
+      text-align: center;
+      padding: 1rem;
+    }
+    .lang-switch button {
+      margin: 0 0.5rem;
+      padding: 0.5rem 1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
 
+  <!-- 🔀 Boutons de langue -->
+  <div class="lang-switch">
+    <button onclick="switchLang('fr')">Français</button>
+    <button onclick="switchLang('en')">English</button>
+  </div>
+
   <!-- 🔹 En-tête -->
-  <header id="accueil">
+  <header id="accueil" class="lang" lang="fr">
     <h1>Romain Urbaniak</h1>
     <p>Étudiant en ingénierie mécanique – Passionné par la mécanique des fluides</p>
     <p>Bienvenue sur mon portfolio !</p>
-    <p>Je suis actuellement étudiant à l'École Polytechnique Universitaire de Lyon, où je me spécialise en ingénierie mécanique. Mon parcours académique et mes projets reflètent ma passion pour la mécanique des fluides et mon engagement envers l'innovation technologique.</p>
-    <p>Ce portfolio présente mes projets, compétences et parcours académique. N'hésitez pas à explorer les différentes sections pour en savoir plus sur mon travail et mes réalisations.</p>
-    <p>Pour toute question ou collaboration, vous pouvez me contacter via les informations fournies dans la section Contact.</p>
+    <p>Je suis actuellement étudiant à l'École Polytechnique Universitaire de Lyon, où je me spécialise en ingénierie mécanique...</p>
+    <p>Ce portfolio présente mes projets, compétences et parcours académique...</p>
+    <p>Pour toute question ou collaboration, vous pouvez me contacter via la section Contact.</p>
     <p>Merci de votre visite !</p>
+  </header>
+
+  <header class="lang" lang="en">
+    <h1>Romain Urbaniak</h1>
+    <p>Mechanical engineering student – Passionate about fluid mechanics</p>
+    <p>Welcome to my portfolio!</p>
+    <p>I am currently studying at the École Polytechnique Universitaire de Lyon, specializing in mechanical engineering...</p>
+    <p>This portfolio showcases my projects, skills, and academic background...</p>
+    <p>For any questions or collaborations, feel free to contact me via the Contact section.</p>
+    <p>Thank you for visiting!</p>
   </header>
 
   <!-- 🔹 Menu -->
   <nav>
-    <a href="#projets">Projets</a>
-    <a href="#competences">Compétences</a>
-    <a href="#parcours">Parcours</a>
+    <a href="#projets">Projets / Projects</a>
+    <a href="#competences">Compétences / Skills</a>
+    <a href="#parcours">Parcours / Background</a>
     <a href="#cv">CV</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <!-- 🔹 Section Projets -->
-  <section id="projets">
+  <!-- 🔹 Projets -->
+  <section id="projets" class="lang" lang="fr">
     <h2>Projets</h2>
-    <h3>Au sein de l'École Polytechnique Universitaire de Lyon : </h3>
-  <ul>
-  <li>
-    <a href="projet1.html">Étude vibratoire d'une pâle d'hélicoptère avec un défaut de masse</a>
-    <p>Analyse des modes vibratoires d'une pâle d'hélicoptère en prenant en compte un défaut de masse pour étudier son impact sur la performance et la sécurité.</p>
-  </li>
-  <li>
-    <a href="projet2.html">Optimisation de la précision d'un capteur de recul</a>
-    <p>Projet visant à améliorer la précision et la fiabilité des capteurs de recul dans les véhicules en utilisant des techniques de modélisation et de simulation.</p>
-  </li>
-  <li>
-    <a href="projet3.html">Modélisation et résolution de l'équation de la chaleur</a>
-    <p>Application des méthodes numériques pour résoudre l'équation de la chaleur dans des géométries complexes, afin de mieux comprendre la diffusion thermique dans divers matériaux.</p>
-  </li>
-  <li>
-    <a href="projet4.html">Conception d'un porte-bagages pour vélo</a>
-    <p>Conception et modélisation d'un porte-bagages léger mais robuste pour vélo, en utilisant des matériaux composites pour maximiser la performance et réduire le poids.</p>
-  </li>
-  <li>
-    <a href="projet5.html">Résolution du problème à N-corps</a>
-    <p>Étude de la dynamique des systèmes à N-corps en utilisant des méthodes de simulation numérique pour résoudre les interactions gravitationnelles entre plusieurs objets.</p>
-  </li>
-</ul>
-        <h3>Lors de Stage</h3>
+    <h3>Au sein de l'École Polytechnique Universitaire de Lyon :</h3>
     <ul>
-      <li>
-      <a href="projet6.html"></a>Data-Driven Model-Order Reduction of Optimized Wing Geometries of Composite Aircraft</a>
-      <p>Développement d'un modèle réduit basé sur des données pour optimiser la géométrie des ailes d'avions en matériaux composites.</p>
-  </li>
+      <li><a href="projet1.html">Étude vibratoire d'une pâle d'hélicoptère</a><p>Analyse des modes vibratoires...</p></li>
+      <li><a href="projet2.html">Optimisation d'un capteur de recul</a><p>Amélioration de la précision des capteurs...</p></li>
+      <li><a href="projet3.html">Équation de la chaleur</a><p>Application de méthodes numériques...</p></li>
+      <li><a href="projet4.html">Porte-bagages vélo</a><p>Conception légère et robuste...</p></li>
+      <li><a href="projet5.html">Problème à N-corps</a><p>Étude des interactions gravitationnelles...</p></li>
+    </ul>
+    <h3>Lors de Stage</h3>
+    <ul>
+      <li><a href="projet6.html">Model-Order Reduction of Composite Wings</a><p>Modèle réduit pour ailes en composites...</p></li>
     </ul>
   </section>
 
-  <!-- 🔹 Section Compétences -->
-  <section id="competences">
+  <section class="lang" lang="en">
+    <h2>Projects</h2>
+    <h3>At École Polytechnique Universitaire de Lyon:</h3>
+    <ul>
+      <li><a href="projet1.html">Vibrational study of a helicopter blade</a><p>Analysis of vibrational modes...</p></li>
+      <li><a href="projet2.html">Optimization of a reversing sensor</a><p>Improving sensor accuracy...</p></li>
+      <li><a href="projet3.html">Heat equation modeling</a><p>Using numerical methods...</p></li>
+      <li><a href="projet4.html">Bike rack design</a><p>Light yet robust design...</p></li>
+      <li><a href="projet5.html">N-body problem solving</a><p>Simulating gravitational interactions...</p></li>
+    </ul>
+    <h3>Internship Project</h3>
+    <ul>
+      <li><a href="projet6.html">Data-Driven Model-Order Reduction</a><p>Reduced model for composite aircraft wings...</p></li>
+    </ul>
+  </section>
+
+  <!-- 🔹 Compétences -->
+  <section id="competences" class="lang" lang="fr">
     <h2>Compétences</h2>
     <ul>
       <li><strong>Logiciels :</strong> SolidWorks, CATIA, ANSYS</li>
-      <li><strong>Langages :</strong> Python, C/C++, MATLAB, Arduino, Bash, HTML </li>
+      <li><strong>Langages :</strong> Python, C/C++, MATLAB, Arduino, Bash, HTML</li>
       <li><strong>Langues :</strong> Français (natif), Anglais (C1), Japonais (en cours)</li>
     </ul>
   </section>
 
-  <!-- 🔹 Section Parcours -->
-  <section id="parcours">
+  <section class="lang" lang="en">
+    <h2>Skills</h2>
+    <ul>
+      <li><strong>Software:</strong> SolidWorks, CATIA, ANSYS</li>
+      <li><strong>Languages:</strong> Python, C/C++, MATLAB, Arduino, Bash, HTML</li>
+      <li><strong>Spoken:</strong> French (native), English (C1), Japanese (learning)</li>
+    </ul>
+  </section>
+
+  <!-- 🔹 Parcours -->
+  <section id="parcours" class="lang" lang="fr">
     <h2>Parcours académique</h2>
     <p><strong>École Polytechnique Universitaire de Lyon</strong> – Génie Mécanique (2023–2026)</p>
-    <p><strong>Classe Préparatoire au grande école d'ingénieur du lycée St Joseph Pierre Rouge</strong> – PSI (2020–2023)</p>
-    <p><strong>Baccalauréat Scientifique mention bien euro anglais </strong> – Lycée Théodore Aubanel - Avignon (2019)</p>
-    <p><!-- Autres diplômes ou échanges si besoin --></p>
+    <p><strong>CPGE St Joseph Pierre Rouge</strong> – PSI (2020–2023)</p>
+    <p><strong>Bac Scientifique mention bien euro anglais</strong> – Lycée Théodore Aubanel (2019)</p>
   </section>
 
-  <!-- 🔹 Section CV -->
-  <section id="cv">
+  <section class="lang" lang="en">
+    <h2>Academic Background</h2>
+    <p><strong>École Polytechnique Universitaire de Lyon</strong> – Mechanical Engineering (2023–2026)</p>
+    <p><strong>Preparatory Class PSI – St Joseph Pierre Rouge</strong> (2020–2023)</p>
+    <p><strong>Scientific Baccalaureate, honors, Euro English section</strong> – Aubanel High School (2019)</p>
+  </section>
+
+  <!-- 🔹 CV -->
+  <section id="cv" class="lang" lang="fr">
     <h2>Mon CV</h2>
-    <p>Tu peux télécharger mon CV en cliquant ici :</p>
-    <a class="button" href="cv_romain_urbaniak.pdf" download>Télécharger mon CV français</a>
-    <a class="button" href="cv_romain_urbaniak_en.pdf" download>download My resumé</a>
+    <p>Tu peux télécharger mon CV ici :</p>
+    <a class="button" href="cv_romain_urbaniak.pdf" download>Télécharger mon CV</a>
+    <a class="button" href="cv_romain_urbaniak_en.pdf" download>Download my resume</a>
   </section>
 
-  <!-- 🔹 Section Contact -->
-  <section id="contact">
+  <section class="lang" lang="en">
+    <h2>My Resume</h2>
+    <p>You can download my resume here:</p>
+    <a class="button" href="cv_romain_urbaniak.pdf" download>Download French CV</a>
+    <a class="button" href="cv_romain_urbaniak_en.pdf" download>Download English resume</a>
+  </section>
+
+  <!-- 🔹 Contact -->
+  <section id="contact" class="lang" lang="fr">
     <h2>Contact</h2>
     <p>Email : <a href="mailto:romainurbaniak@email.com">romainurbaniak@email.com</a></p>
     <p>LinkedIn : <a href="https://www.linkedin.com/in/romainurbaniak/" target="_blank">linkedin.com/in/romainurbaniak</a></p>
     <p>GitHub : <a href="https://github.com/romainurbaniak" target="_blank">github.com/romainurbaniak</a></p>
   </section>
 
+  <section class="lang" lang="en">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:romainurbaniak@email.com">romainurbaniak@email.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/romainurbaniak/" target="_blank">linkedin.com/in/romainurbaniak</a></p>
+    <p>GitHub: <a href="https://github.com/romainurbaniak" target="_blank">github.com/romainurbaniak</a></p>
+  </section>
+
+  <!-- 🔹 Footer -->
   <footer>
-    &copy; 2025 Romain Urbaniak — Tous droits réservés
+    &copy; 2025 Romain Urbaniak — All rights reserved
   </footer>
+
+  <!-- 🔁 Script de langue -->
+  <script>
+    function switchLang(lang) {
+      document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll(`[lang="${lang}"]`).forEach(el => el.classList.add('active'));
+      localStorage.setItem('lang', lang);
+    }
+    const savedLang = localStorage.getItem('lang');
+    const browserLang = navigator.language.startsWith('fr') ? 'fr' : 'en';
+    switchLang(savedLang || browserLang);
+  </script>
 
 </body>
 </html>
