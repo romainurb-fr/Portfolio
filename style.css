@@ -11,7 +11,7 @@ body {
 
 /* Styles généraux du header sans image de fond */
 header {
-  background-color: #90cdf4; /* Bleu clair doux */
+  background-color: #1e3a8a; /* Bleu clair doux */
   color: white;
   padding: 4rem 2rem;
   text-align: center;
@@ -19,7 +19,7 @@ header {
 }
 
 nav {
-  background-color: #90cdf4; /* Bleu clair doux */
+  background-color: #1e3a8a; /* Bleu clair doux */
   display: flex;
   justify-content: center;
   gap: 2rem;
