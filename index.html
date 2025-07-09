@@ -55,15 +55,22 @@ header {
     margin-top: 3rem;
   }
 
-  a.button {
-    display: inline-block;
-    background-color: #3b82f6;
-    color: white;
-    padding: 0.7rem 1.5rem;
-    border-radius: 8px;
-    text-decoration: none;
-    margin-top: 1rem;
-  }
+.lang-switch button {
+  background: linear-gradient(to right, #00c6ff, #0072ff); /* Dégradé bleu */
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  transition: transform 0.2s ease-in-out;
+}
+
+.lang-switch button:hover {
+  transform: translateY(-3px); /* Effet de levée au survol */
+  background: linear-gradient(to right, #0072ff, #00c6ff); /* Inversion des couleurs sur hover */
+}
 
   .lang { display: none; }
   .lang.active { display: block; }
