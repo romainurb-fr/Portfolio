@@ -180,6 +180,12 @@ footer {
   background-color: #3b82f6;
 }
 
+/* Conteneur pour centrer le bouton */
+.button-container {
+  text-align: center; /* Centre le bouton dans le conteneur */
+  margin-top: 1rem;   /* Ajoute un espace au-dessus */
+}
+
 /* Styles pour le bouton de téléchargement du CV */
 .button {
   display: inline-block;
@@ -188,9 +194,9 @@ footer {
   padding: 0.7rem 1.5rem;
   border-radius: 8px;
   text-decoration: none;
-  margin-top: 1rem;
   font-weight: bold;
   transition: background-color 0.3s ease;
+  margin: 0 auto; /* Centre le bouton lorsqu'il est dans un conteneur */
 }
 
 .button:hover {
