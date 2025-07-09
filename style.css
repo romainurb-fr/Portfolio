@@ -59,6 +59,10 @@ h2 {
   text-align: center;
   color: #1e3a8a;
 }
+h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.05rem; /* ou moins, selon ton besoin */
+}
 
 footer {
   background-color: #1e3a8a;
