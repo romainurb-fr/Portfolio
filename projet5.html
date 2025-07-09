@@ -58,7 +58,9 @@ function switchLang(lang) {
 
   <section id="methodologie">
     <h2>Méthodologie</h2>
-    <p> Nous avons crée plusieurs classes d'objet en C++ orientée objet pour modéliser les corps et leurs interactions gravitationnelles. Nous avons crée les classes : coordonées, Vecteur et point matériel. Nous avons ensuite résolu le problème à N-corps en modélisans chaque planetes et astres par des points matériels.</p>
+    <p> Nous avons crée plusieurs classes d'objet en C++ orientée objet pour modéliser les corps et leurs interactions gravitationnelles. Nous avons crée les classes : coordonées, Vecteur et point matériel. Nous avons ensuite résolu le problème à N-corps en modélisans chaque planetes et astres par des points matériels sur C++. 
+      Enfin, nous avons traité les données obtenues à l'aide de Python pour visualiser les trajectoires des corps célestes. Nous avons utilisé la méthode d'Euler pour intégrer les équations du mouvement et simuler le système sur une période donnée.</p> 
+    </p>
   </section>
 
   <section id="resultats">
@@ -67,13 +69,17 @@ function switchLang(lang) {
     <img src="images/img_Ncorps/LUNETERRE.png" alt="Trajectoire de la Lune autour de la Terre" class="image-center">
     Et ensuite nous avons tracé la trajectoire de notre système solaire autour de notre soleil.
     <img src="images/img_Ncorps/systeme solaire.png" alt="Trajectoire du système solaire autour du soleil" class="image-center">
-  <section id="conclusion">
+  
+  
+    <section id="conclusion">
     <h2>Conclusion</h2>
+    Dans le cadre de ce TP, nous avons mis en œuvre une méthode de résolution du problème à N corps. Pour cela, nous avons développé un programme en C++ capable de calculer la position des planètes à chaque instant à l’aide d’une articulation algorithmique spécifique. Les données générées ont ensuite été traitées et exploitées à l’aide de scripts en Python.
+
+  Cette démarche nous a permis de renforcer nos compétences en programmation, tant en C++ qu’en Python, tout en appliquant nos connaissances à un problème concret et physiquement significatif.
   </section>
 
   <footer>
     <p>&copy; 2025 Romain Urbaniak. Tous droits réservés.</p>
-    <a href="index.html" class="button">Retour au Portfolio</a>
   </footer>
 </div>
 
@@ -81,31 +87,40 @@ function switchLang(lang) {
 <div class="lang" lang="en">
   <header>
     <h1>N-body Problem</h1>
-    <a href="rapport/Projet_N_corps.pdf" class="button">Download PDF Report (French only)</a>
-    <p>This project was carried out over a period of two and a half months as part of my computer science training at the École Polytechnique Universitaire de Lyon.</p>
+    <a href="rapport/Projet_N_corps.pdf" class="button">Download PDF Report (French)</a>
+    <p>This project was completed over a period of two and a half months as part of my computer science training at the École Polytechnique Universitaire de Lyon.</p>
   </header>
 
   <nav>
     <a href="#introduction">Introduction</a>
-    <a href="#methodology">Methodology</a>
-    <a href="#results">Results</a>
+    <a href="#methodologie">Methodology</a>
+    <a href="#resultats">Results</a>
     <a href="#conclusion">Conclusion</a>
   </nav>
 
   <section id="introduction">
     <h2>Introduction</h2>
+    <p>The N-body problem is a classical challenge in celestial mechanics that aims to describe the motion of N bodies under the influence of gravity. This project focused on modeling this problem using advanced numerical methods.</p>
   </section>
 
-  <section id="methodology">
+  <section id="methodologie">
     <h2>Methodology</h2>
+    <p>We developed several object-oriented C++ classes to model the bodies and their gravitational interactions. Specifically, we created classes for coordinates, vectors, and material points. Each planet and celestial object was represented as a material point to simulate the N-body system in C++.  
+    The resulting data were then processed in Python to visualize the trajectories of the celestial bodies. We used Euler’s method to integrate the equations of motion and simulate the system over a defined period.</p>
   </section>
 
-  <section id="results">
+  <section id="resultats">
     <h2>Results</h2>
+    <p>The simulation results revealed the dynamic behavior of the celestial bodies over time. We first plotted the trajectory of the Moon around the Earth:</p>
+    <img src="images/img_Ncorps/LUNETERRE.png" alt="Trajectory of the Moon around the Earth" class="image-center">
+    <p>Then, we extended the simulation to model the entire solar system orbiting around the Sun:</p>
+    <img src="images/img_Ncorps/systeme solaire.png" alt="Trajectory of the solar system around the Sun" class="image-center">
   </section>
 
   <section id="conclusion">
     <h2>Conclusion</h2>
+    <p>Through this lab project, we implemented a numerical approach to solve the N-body problem. A C++ program was developed to compute the positions of the planets over time using a custom algorithmic framework. The generated data were later analyzed and visualized using Python scripts.</p>
+    <p>This project allowed us to strengthen our skills in both C++ and Python programming while applying them to a concrete and physically meaningful problem.</p>
   </section>
 
   <footer>
