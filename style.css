@@ -7,16 +7,7 @@ body {
   color: #1e293b;
 }
 
-/* Image de fond spécifique à la page d'accueil */
-body.home-page header {
-  background-image: url("images/header-background.png");
-  background-size: cover;
-  background-position: center;
-  color: white;
-  padding: 4rem 2rem;
-  text-align: center;
-  position: relative;
-}
+
 
 /* Styles généraux du header sans image de fond */
 header {
