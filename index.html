@@ -130,12 +130,27 @@ header {
   }
 </style>
 </head>
+
+<script>
+  function setLanguage(lang) {
+    const menuFr = document.getElementById('menu-fr');
+    const menuEn = document.getElementById('menu-en');
+
+    if (lang === 'fr') {
+      menuFr.style.display = 'block';
+      menuEn.style.display = 'none';
+    } else if (lang === 'en') {
+      menuFr.style.display = 'none';
+      menuEn.style.display = 'block';
+    }
+  }
+</script>
 <body>
 
   <!-- 🔀 Boutons de langue -->
   <div class="lang-switch">
-    <button onclick="switchLang('fr')">Français</button>
-    <button onclick="switchLang('en')">English</button>
+    <button onclick="setLanguage('fr')">Français</button>
+    <button onclick="setLanguage('en')">English</button>
   </div>
 
   <!-- 🔹 En-tête -->
@@ -318,7 +333,7 @@ header {
   <section id="competences" class="lang" lang="fr">
     <h2>Compétences</h2>
     <ul>
-      <li><strong>Logiciels :</strong> SolidWorks, CATIA, ANSYS</li>
+      <li><strong>Logiciels :</strong> SolidWorks, CATIA, ANSYS, </li>
       <li><strong>Langages :</strong> Python, C/C++, MATLAB, Arduino, Bash, HTML</li>
       <li><strong>Langues :</strong> Français (natif), Anglais (C1), Japonais (en cours)</li>
     </ul>
