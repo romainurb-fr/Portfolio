@@ -47,10 +47,14 @@ nav a:hover {
 }
 
 section {
-  padding: 2.5rem 2rem; /* Réduit l’espace interne aussi */
+  padding: 4rem 2rem;
   max-width: 1000px;
-  margin: 1rem auto 0.5rem auto; /* réduit l’espace externe entre les sections */
+  margin-top: 1rem;
+  margin-bottom: 0.05rem; /* ou moins, selon ton besoin */
   background-color: transparent;
+}
+section {
+  background-color: rgba(0, 255, 0, 0.1); /* couleur temporaire de test */
 }
 
 h2 {
