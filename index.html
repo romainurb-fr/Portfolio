@@ -4,11 +4,13 @@
   <meta charset="UTF-8">
   <title>Portfolio - Romain Urbaniak</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
+<style>
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   scroll-behavior: smooth;
+  background-color: #f0f4f8; /* Fond gris bleuté */
+  color: #1e293b;
 }
 
 header {
@@ -22,7 +24,7 @@ header {
 }
 
 nav {
-  background-color: #88a1f5; /* Bleu clair pour la bande de menu */
+  background-color: #64748b; /* Gris bleuté foncé */
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -33,19 +35,25 @@ nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #f0f4f8;
 }
 
 section {
   padding: 4rem 2rem;
   max-width: 1000px;
   margin: auto;
-  background-color: transparent; /* Aucun fond pour la section de présentation */
+  background-color: transparent;
 }
 
 h2 {
-  border-bottom: 2px solid #e2e8f0;
+  border-bottom: 2px solid #cbd5e1;
   padding-bottom: 0.5rem;
   text-align: center;
+  color: #1e293b;
 }
 
 footer {
@@ -57,17 +65,17 @@ footer {
 }
 
 .lang-switch {
-  position: fixed; /* Fixe la position */
-  bottom: 20px; /* À 20px du bas */
-  right: 20px; /* À 20px du côté droit */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
   z-index: 1000;
   display: flex;
   gap: 1rem;
 }
 
 .lang-switch button {
-  background-color: #f0f0f0;
-  color: #333;
+  background-color: #e2e8f0;
+  color: #1e293b;
   padding: 0.7rem 1.2rem;
   border-radius: 5px;
   cursor: pointer;
@@ -77,7 +85,7 @@ footer {
 }
 
 .lang-switch button:hover {
-  background-color: #0072ff; /* Survol avec bleu */
+  background-color: #64748b;
   color: white;
 }
 
@@ -85,7 +93,7 @@ footer {
 .project-row {
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #cbd5e1;
   border-radius: 12px;
   overflow: hidden;
   margin-bottom: 2rem;
@@ -130,7 +138,6 @@ footer {
   color: #334155;
 }
 
-/* Cacher toutes les sections sauf celles activées */
 .lang {
   display: none;
 }
@@ -143,18 +150,17 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Centre horizontalement */
+  align-items: center;
   padding: 1.5rem;
   min-width: 250px;
   text-align: center;
 }
 
-/* Bouton pour voir les projets */
 .view-project-btn {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.6rem 1.2rem;
-  background-color: #88a1f5; /* Bleu clair */
+  background-color: #64748b; /* Gris bleuté foncé */
   color: white;
   border: none;
   border-radius: 8px;
@@ -164,10 +170,10 @@ footer {
 }
 
 .view-project-btn:hover {
-  background-color: #2563eb; /* Bleu plus foncé au survol */
+  background-color: #475569;
 }
-  
-  </style>
+</style>
+
   <link rel="icon" href="images/favicon.png" type="image/png">
   <style>
     /* Styles pour le bouton de téléchargement du CV */
