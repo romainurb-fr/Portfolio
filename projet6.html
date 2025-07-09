@@ -56,10 +56,38 @@ nav a {
     }
     .lang { display: none; }
     .lang.active { display: block; }
+    .lang-switch {
+  position: fixed; /* Fixe la position */
+  bottom: 20px; /* À 20px du bas */
+  right: 20px; /* À 20px du côté droit */
+  z-index: 1000;
+  display: flex;
+  gap: 1rem;
+}
+
+.lang-switch button {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.lang-switch button:hover {
+  background-color: #0072ff; /* Survol avec bleu */
+  color: white;
+}
   </style>
 </head>
 <body>
 
+<div class="lang-switch">
+  <button onclick="switchLang('fr')">Français</button>
+  <button onclick="switchLang('en')">English</button>
+</div>
 <!-- 🔹 Version Française -->
 <div class="lang" lang="fr">
   <header>
