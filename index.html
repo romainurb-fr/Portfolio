@@ -166,14 +166,20 @@ function switchLang(lang) {
   <button onclick="switchLang('en')">English</button>
 </div>
 
-<!-- 🔹 En-tête -->
+<!-- 🔹 En-tête FR -->
 <header id="accueil" class="lang" lang="fr">
   <h1>Romain Urbaniak</h1>
   <p><strong>École Polytechnique Universitaire de Lyon</strong> – Spécialité en Génie Mécanique</p>
 </header>
 
-<!-- 🔹 Section Présentation -->
-<section id="presentation" style="padding: 4rem 2rem; background-color: rgba(0, 0, 0, 0.5); color: white;">
+<!-- 🔹 En-tête EN -->
+<header class="lang" lang="en">
+  <h1>Romain Urbaniak</h1>
+  <p><strong>École Polytechnique Universitaire de Lyon</strong> – Mechanical Engineering Student</p>
+</header>
+
+<!-- 🔹 Présentation FR -->
+<section id="presentation" class="lang" lang="fr" style="padding: 4rem 2rem; background-color: rgba(0, 0, 0, 0.5); color: white;">
   <h2>Présentation</h2>
   <p><strong>Étudiant en ingénierie mécanique</strong> – Passionné par la <strong>mécanique des fluides</strong> et les défis techniques complexes.</p>
   <p>Bienvenue sur mon portfolio ! Vous y découvrirez mes projets, mes compétences et mon parcours académique.</p>
@@ -183,14 +189,8 @@ function switchLang(lang) {
   <p>Merci de votre visite et à bientôt !</p>
 </section>
 
-<!-- 🔹 En-tête en anglais -->
-<header class="lang" lang="en">
-  <h1>Romain Urbaniak</h1>
-  <p><strong>École Polytechnique Universitaire de Lyon</strong> – Mechanical Engineering Student</p>
-</header>
-
-<!-- 🔹 Section Présentation en anglais -->
-<section id="presentation" style="padding: 4rem 2rem; background-color: rgba(0, 0, 0, 0.5); color: white;">
+<!-- 🔹 Presentation EN -->
+<section id="presentation" class="lang" lang="en" style="padding: 4rem 2rem; background-color: rgba(0, 0, 0, 0.5); color: white;">
   <h2>Introduction</h2>
   <p><strong>Mechanical Engineering Student</strong> – Passionate about <strong>fluid mechanics</strong> and tackling complex technical challenges.</p>
   <p>Welcome to my portfolio! Here, you will find my projects, skills, and academic background.</p>
@@ -199,6 +199,7 @@ function switchLang(lang) {
   <p>If you have any questions or would like to discuss potential collaboration, feel free to contact me through the <a href="#contact">Contact</a> section.</p>
   <p>Thank you for visiting, and I look forward to hearing from you!</p>
 </section>
+
 
 <nav>
   <a href="#projets" data-fr="Projets" data-en="Projects">Projets</a>
