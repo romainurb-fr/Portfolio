@@ -186,3 +186,27 @@ footer {
 .button:hover {
   background-color: #3b82f6;
 }
+
+.back-to-portfolio {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.portfolio-button {
+  background-color: #dbeafe;
+  color: #1e3a8a;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+
+.portfolio-button:hover {
+  background-color: #60a5fa;
+  color: white;
+}

@@ -6,7 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
+<script>
+function switchLang(lang) {
+  // Cacher toutes les sections
+  document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
+
+  // Afficher les sections correspondant à la langue choisie
+  document.querySelectorAll(`[lang="${lang}"]`).forEach(el => el.classList.add('active'));
+
+  // Mettre à jour le texte des liens de menu
+  document.querySelectorAll('nav a').forEach(el => {
+    el.textContent = el.getAttribute(`data-${lang}`);
+  });
+
+  // Sauvegarder la langue choisie dans le localStorage
+  localStorage.setItem('lang', lang);
+}
+</script>
+
 <body>
+
+<!-- Boutons flottants en bas à droite -->
+<div class="lang-switch">
+  <button onclick="switchLang('fr')">Français</button>
+  <button onclick="switchLang('en')">English</button>
+</div>
+
+<div class="back-to-portfolio">
+  <a href="index.html" class="portfolio-button">Back to Portfolio</a>
+</div>
 
 <!-- 🔹 Version Française -->
 <div class="lang" lang="fr">
