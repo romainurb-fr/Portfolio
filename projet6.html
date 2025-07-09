@@ -71,7 +71,7 @@ nav a {
   <header>
     <h1>Réduction d'ordre de modèle des ailes composites</h1>
     <a href="rapport/rapportstage.pdf" class="button">Télécharger le Rapport PDF (anglais)</a>
-    <p>Ce projet a été réalisé sur une durée de 4 mois et demi dans le cadre d'un stage en recherche dans le laboratoire multi-physique de Professeur Abe dans l'université de TOHOKU au Japon.</p>
+    <p>Ce projet a été réalisé sur une durée de 4 mois et demi dans le cadre d'un stage en recherche dans le laboratoire multi-physique de Professeur Abe à l'université de TOHOKU, au Japon.</p>
   </header>
 
   <nav>
@@ -84,9 +84,8 @@ nav a {
 
   <section id="Contexte">
     <h2>Contexte</h2>
-    <p>L'aviation est un secteur fortement polluant, dont la réduction de l’impact environnemental est devenue une priorité. Les ingénieurs s'appuient de plus en plus sur les simulations numériques pour concevoir des avions plus performants et durables, mais ces simulations génèrent d'énormes volumes de données. Par ailleurs, les matériaux composites comme les CFRP, bien que prometteurs, restent complexes à modéliser et certifier. Face à ces défis, des approches basées sur les données, comme la réduction de dimension et l’identification de modes aérodynamiques, permettent de diminuer les coûts de calcul tout en conservant la précision.</p>
-  <img src="images/img_stage/schemaparm.png" alt="Representation schématique des paramètres de l'aile" class="image-center">
-
+    <p>L'aviation est un secteur fortement polluant, et la réduction de l'impact environnemental est devenue une priorité. Les ingénieurs s'appuient de plus en plus sur les simulations numériques pour concevoir des avions plus performants et durables, mais ces simulations génèrent d'énormes volumes de données. Les matériaux composites, comme les CFRP, bien que prometteurs, restent complexes à modéliser et certifier. Face à ces défis, des approches basées sur les données, comme la réduction de dimension et l’identification de modes aérodynamiques, permettent de diminuer les coûts de calcul tout en conservant la précision.</p>
+    <img src="images/img_stage/schemaparm.png" alt="Représentation schématique des paramètres de l'aile" class="image-center">
   </section>
 
   <section id="Problématique">
@@ -96,46 +95,40 @@ nav a {
 
   <section id="Méthodes">
     <h2>Méthodes</h2>
-    <p>Pour répondre à cette problématique, j'ai utilisé une approche en deux étapes : <ul>
-  <li>
-    Utilisation de méthodes orientées données pour la réduction de dimension : identification des comportements dominants dans les données à l'aide de la <strong>POD</strong> (Proper Orthogonal Decomposition) et de la <strong>SOM</strong> (Self-Organizing Map) afin de créer des modèles réduits pertinents et exploitables.
-  </li>
-  <li>
-    Application de ces modèles réduits à des simulations aérodynamiques pour évaluer leur performance et leur précision dans la reconstruction des comportements aéroélastiques.
-  </li>
-</ul>
-  </p>
-  <img src="images/img_stage/ff.png" alt="Approche scientifique" class="image-center">
-
+    <p>Pour répondre à cette problématique, j'ai utilisé une approche en deux étapes :</p>
+    <ul>
+      <li>Utilisation de méthodes orientées données pour la réduction de dimension : identification des comportements dominants dans les données à l'aide de la <strong>POD</strong> (Proper Orthogonal Decomposition) et de la <strong>SOM</strong> (Self-Organizing Map) afin de créer des modèles réduits pertinents et exploitables.</li>
+      <li>Application de ces modèles réduits à des simulations aérodynamiques pour évaluer leur performance et leur précision dans la reconstruction des comportements aéroélastiques.</li>
+    </ul>
+    <img src="images/img_stage/ff.png" alt="Approche scientifique" class="image-center">
   </section>
 
   <section id="Résultats">
     <h2>Résultats</h2>
     <ul>
-  <li>
-    Deux modèles réduits ont été mis en place :
-    <ul>
-      <li>Un basé sur la reconstruction par <strong>POD</strong> (Proper Orthogonal Decomposition).</li>
-      <li>Un mis en valeur par <strong>SOM</strong> (Self-Organizing Map), reconstruit uniquement en faisant varier la longueur de l’aile.</li>
+      <li>Deux modèles réduits ont été mis en place :</li>
+      <ul>
+        <li>Un basé sur la reconstruction par <strong>POD</strong> (Proper Orthogonal Decomposition).</li>
+        <li>Un mis en valeur par <strong>SOM</strong> (Self-Organizing Map), reconstruit uniquement en faisant varier la longueur de l’aile.</li>
+      </ul>
+      <li>Les résultats montrent que ces modèles permettent de capturer efficacement les comportements aéroélastiques des ailes composites tout en réduisant significativement le temps de calcul. Voici quelques résultats clés : distribution de pression et du nombre de Mach sur l'aile, ainsi que la variation du coefficient de pression sur des sections de l'aile pour la géométrie originale et la géométrie reconstruite par POD.</li>
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
+        <img src="images/img_stage/machPOD.png" alt="Distribution Mach POD" style="width: 600px; height: auto;">
+        <img src="images/img_stage/PODpressure.png" alt="Pression POD" style="width: 600px; height: auto;">
+        <img src="images/img_stage/cp.png" alt="Coefficient de pression" style="width: 600px; height: auto;">
+      </div>
+      <li>Ces approches offrent une alternative viable aux méthodes traditionnelles, ouvrant la voie à des simulations plus rapides et moins coûteuses.</li>
     </ul>
-  </li>
-    Les résultats montrent que ces modèles permettent de capturer efficacement les comportements aéroélastiques des ailes composites tout en réduisant significativement le temps de calcul. Voici quelques résultats clés : distribution de pression et du nombre de Mach sur l'aile, ainsi que la variation du coefficient de pression sur des sections de l'aile pour la géométrie originale et la géométrie reconstruite par POD.
-<div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
-  <img src="images/img_stage/machPOD.png" alt="Image 1" style="width: 600px; height: auto;">
-  <img src="images/img_stage/PODpressure.png" alt="Image 2" style="width: 600px; height: auto;">
-  <img src="images/img_stage/cp.png" alt="Image 3" style="width: 600px; height: auto;">
-</div>
-    Ces approches offrent une alternative viable aux méthodes traditionnelles, ouvrant la voie à des simulations plus rapides et moins coûteuses.
-</ul>
   </section>
 
   <section id="Ce que j'ai appris">
-<h2>Ce que j'ai appris</h2>
+    <h2>Ce que j'ai appris</h2>
     <ul>
-      Ce stage m'a offert l'opportunité d'approfondir mes connaissances en simulations aéroélastiques, en particulier sur l'interaction fluide-structure grâce au logiciel DASH développé par le laboratoire. J'ai également enrichi mes compétences en programmation, notamment en Python pour le traitement des résultats post-simulation, ainsi qu'en Linux pour la gestion et l'exécution des différentes simulations sous DASH.</li>
+      <li>Ce stage m'a offert l'opportunité d'approfondir mes connaissances en simulations aéroélastiques, en particulier sur l'interaction fluide-structure grâce au logiciel DASH développé par le laboratoire.</li>
+      <li>J'ai également enrichi mes compétences en programmation, notamment en Python pour le traitement des résultats post-simulation, ainsi qu'en Linux pour la gestion et l'exécution des différentes simulations sous DASH.</li>
     </ul>
   </section>
-
+</div>
   <footer>
     <p>&copy; 2025 Romain Urbaniak. Tous droits réservés.</p>
     <a href="index.html" class="button">Retour au Portfolio</a>
