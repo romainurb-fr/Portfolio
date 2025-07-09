@@ -7,7 +7,6 @@ body {
   color: #1e293b;
 }
 
-
 /* Styles généraux du header sans image de fond */
 header {
   background-color: #1e3a8a; /* Bleu clair doux */
@@ -17,18 +16,19 @@ header {
   position: relative;
 }
 
+/* Images centrées avec marges verticales */
 .image-center {
   display: block;   
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px; /* Espace avant l'image */
+  margin-top: 20px;   /* Espace avant l'image */
   margin-bottom: 20px; /* Espace après l'image */
   max-width: 100%;
   height: auto;
 }
 
 nav {
-  background-color: #1e3a8a; /* Bleu clair doux */
+  background-color: #1e3a8a;
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -46,10 +46,11 @@ nav a:hover {
   color: #0f172a;
 }
 
+/* Sections centrées avec espacements contrôlés */
 section {
   padding: 4rem 2rem;
   max-width: 1000px;
-  margin: auto;
+  margin: 1rem auto 0.5rem auto;
   background-color: transparent;
 }
 
@@ -59,7 +60,6 @@ h2 {
   text-align: center;
   color: #1e3a8a;
 }
-
 
 footer {
   background-color: #1e3a8a;
@@ -93,6 +93,7 @@ footer {
   background-color: #60a5fa;
   color: white;
 }
+
 .lang {
   display: none;
 }
@@ -101,12 +102,10 @@ footer {
   display: block;
 }
 
-
-
 /* Styles pour le bouton de téléchargement du CV */
 .button {
   display: inline-block;
-  background-color: #60a5fa; /* Bleu clair */
+  background-color: #60a5fa;
   color: white;
   padding: 0.7rem 1.5rem;
   border-radius: 8px;
@@ -119,6 +118,8 @@ footer {
 .button:hover {
   background-color: #3b82f6;
 }
+
+/* Bouton retour au portfolio */
 .back-to-portfolio {
   position: fixed;
   bottom: 20px;
