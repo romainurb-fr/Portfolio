@@ -50,7 +50,7 @@ nav a:hover {
 section {
   padding: 4rem 2rem;
   max-width: 1000px;
-  margin: 0rem auto 0.5rem auto;
+  margin: 0rem auto 0rem auto;
   background-color: transparent;
   border: 2px solid #070707; /* Bordure bleue autour de chaque section */
 }
