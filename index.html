@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
   body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    scroll-behavior: smooth;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  scroll-behavior: smooth;
+}
 
 header {
   background-image: url("images/header-background.png");
@@ -21,39 +21,39 @@ header {
   position: relative;
 }
 
-  nav {
-    background-color: #334155;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding: 1rem 0;
-  }
+nav {
+  background-color: #88a1f5; /* Bleu clair pour la bande de menu */
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+}
 
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-  section {
-    padding: 4rem 2rem;
-    max-width: 1000px;
-    margin: auto;
-  }
+section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
 
- h2 {
+h2 {
   border-bottom: 2px solid #e2e8f0;
   padding-bottom: 0.5rem;
   text-align: center;
 }
 
-  footer {
-    background-color: #1e293b;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 3rem;
-  }
+footer {
+  background-color: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
 
 .lang-switch {
   position: fixed; /* Fixe la position */
@@ -80,63 +80,63 @@ header {
   color: white;
 }
 
-  /* 💡 Projet en 2 colonnes avec alternance */
-  .project-row {
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid #e2e8f0;
-    border-radius: 12px;
-    overflow: hidden;
-    margin-bottom: 2rem;
-    background-color: #f8fafc;
-  }
+/* 💡 Projet en 2 colonnes avec alternance */
+.project-row {
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  background-color: #f8fafc;
+}
 
-  .project-row:nth-child(even) {
-    flex-direction: row-reverse;
-  }
+.project-row:nth-child(even) {
+  flex-direction: row-reverse;
+}
 
-  .project-row .left,
-  .project-row .right {
-    flex: 1;
-    padding: 1.5rem;
-    min-width: 250px;
-  }
+.project-row .left,
+.project-row .right {
+  flex: 1;
+  padding: 1.5rem;
+  min-width: 250px;
+}
 
-  .project-row img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+.project-row img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-  .project-row h4 {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    color: #1e293b;
-  }
+.project-row h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #1e293b;
+}
 
-  .project-row a {
-    text-decoration: none;
-    color: #1e293b;
-  }
+.project-row a {
+  text-decoration: none;
+  color: #1e293b;
+}
 
-  .project-row a:hover {
-    text-decoration: underline;
-  }
+.project-row a:hover {
+  text-decoration: underline;
+}
 
-  .project-row p {
-    margin: 0;
-    font-size: 0.95rem;
-    color: #334155;
-  }
+.project-row p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #334155;
+}
 
-  /* Cacher toutes les sections sauf celles activées */
-  .lang {
-    display: none;
-  }
+/* Cacher toutes les sections sauf celles activées */
+.lang {
+  display: none;
+}
 
-  .lang.active {
-    display: block;
-  }
+.lang.active {
+  display: block;
+}
 
 .project-row .left {
   display: flex;
@@ -148,11 +148,12 @@ header {
   text-align: center;
 }
 
+/* Bouton pour voir les projets */
 .view-project-btn {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.6rem 1.2rem;
-  background-color: #88a1f5; /* bleu doux */
+  background-color: #88a1f5; /* Bleu clair */
   color: white;
   border: none;
   border-radius: 8px;
@@ -162,8 +163,9 @@ header {
 }
 
 .view-project-btn:hover {
-  background-color: #2563eb; /* bleu plus foncé au survol */
+  background-color: #ebedf1; /* Bleu plus foncé au survol */
 }
+
 </style>
 </head>
 
