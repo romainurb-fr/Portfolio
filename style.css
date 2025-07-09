@@ -21,9 +21,12 @@ header {
   display: block;   
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px; /* Espace avant l'image */
+  margin-bottom: 20px; /* Espace après l'image */
   max-width: 100%;
   height: auto;
 }
+
 nav {
   background-color: #1e3a8a; /* Bleu clair doux */
   display: flex;
