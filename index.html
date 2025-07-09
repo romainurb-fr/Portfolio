@@ -137,6 +137,23 @@ header {
   .lang.active {
     display: block;
   }
+
+  .view-project-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #1e40af; /* bleu foncé */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.view-project-btn:hover {
+  background-color: #2563eb; /* bleu plus clair */
+}
 </style>
 </head>
 
@@ -213,15 +230,18 @@ function switchLang(lang) {
   <div class="lang" lang="fr">
     <h2>Projets</h2>
     <h3>Lors de Stage</h3>
+
     <div class="project-row">
       <div class="left">
-        <h4><a href="projet6.html">Optimisation de géométrie d'aile</a></h4>
-        <p>Modèle réduit / Python / CFD / CSM / Matériaux composites</p>
+        <h4>Optimisation de géométrie d'aile</h4>
+        <p>Modèle réduit par POD et SOM sur géométries composites — Python / CFD / CSM</p>
+        <a href="projet6.html" class="view-project-btn">Voir le stage</a>
       </div>
       <div class="right">
         <img src="images/projet6.png" alt="Projet 6">
       </div>
     </div>
+  </div>
 
     <h3>Au sein de l'École Polytechnique Universitaire de Lyon :</h3>
 
