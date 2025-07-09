@@ -55,7 +55,7 @@ section {
   border: 2px solid #070707; /* Bordure bleue autour de chaque section */
 }
 
-h2 {
+h2 {    
   border-bottom: 2px solid #cfe2f3;
   padding-bottom: 0.5rem;
   text-align: center;
