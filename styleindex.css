@@ -7,7 +7,6 @@ body {
   color: #1e293b;
 }
 
-
 /* Styles généraux du header sans image de fond */
 header {
   background-color: #1e3a8a; /* Bleu clair doux */
@@ -15,8 +14,13 @@ header {
   padding: 4rem 2rem;
   text-align: center;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Centrer le contenu */
 }
-  /* Image de fond spécifique à la page d'accueil */
+
+/* Image de fond spécifique à la page d'accueil */
 body.home-page header {
   background-image: url("images/header-background.png");
   background-size: cover;
@@ -49,7 +53,7 @@ nav a:hover {
 section {
   padding: 4rem 2rem;
   max-width: 1000px;
-  margin: auto;
+  margin: 0 auto;
   background-color: transparent;
 }
 
@@ -102,6 +106,7 @@ footer {
   overflow: hidden;
   margin-bottom: 2rem;
   background-color: #f1f9ff;
+  gap: 2rem;  /* Ajoute un espace entre les éléments */
 }
 
 .project-row:nth-child(even) {
@@ -201,4 +206,20 @@ footer {
 
 .button:hover {
   background-color: #3b82f6;
+}
+
+/* Améliorations sur les petits écrans */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-row {
+    flex-direction: column;
+  }
+
+  .button {
+    padding: 1rem 2rem;  /* Agrandir le bouton sur les petits écrans */
+  }
 }
