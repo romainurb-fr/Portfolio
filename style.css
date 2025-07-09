@@ -49,8 +49,8 @@ nav a:hover {
 section {
   padding: 4rem 2rem;
   max-width: 1000px;
-  margin: 1rem auto 0.05rem auto; /* top auto bottom auto = centré */
-  background-color: rgba(0, 255, 0, 0.1); /* pour test */
+  margin: auto;
+  background-color: transparent;
 }
 
 h2 {
@@ -58,9 +58,8 @@ h2 {
   padding-bottom: 0.5rem;
   text-align: center;
   color: #1e3a8a;
-  margin-top: 1rem;
-  margin-bottom: 0.05rem; /* ou moins, selon ton besoin */
 }
+
 
 footer {
   background-color: #1e3a8a;
