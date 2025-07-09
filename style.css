@@ -49,12 +49,8 @@ nav a:hover {
 section {
   padding: 4rem 2rem;
   max-width: 1000px;
-  margin-top: 1rem;
-  margin-bottom: 0.05rem; /* ou moins, selon ton besoin */
-  background-color: transparent;
-}
-section {
-  background-color: rgba(0, 255, 0, 0.1); /* couleur temporaire de test */
+  margin: 1rem auto 0.05rem auto; /* top auto bottom auto = centré */
+  background-color: rgba(0, 255, 0, 0.1); /* pour test */
 }
 
 h2 {
