@@ -5,7 +5,7 @@
   <title>Portfolio - Romain Urbaniak</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-  body {
+body {
   font-family: Arial, sans-serif;
   margin: 0;
   scroll-behavior: smooth;
@@ -39,6 +39,7 @@ section {
   padding: 4rem 2rem;
   max-width: 1000px;
   margin: auto;
+  background-color: transparent; /* Aucun fond pour la section de présentation */
 }
 
 h2 {
@@ -163,8 +164,28 @@ footer {
 }
 
 .view-project-btn:hover {
-  background-color: #ebedf1; /* Bleu plus foncé au survol */
+  background-color: #2563eb; /* Bleu plus foncé au survol */
 }
+  
+  </style>
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <style>
+    /* Styles pour le bouton de téléchargement du CV */
+    .button {
+      display: inline-block;
+      background-color: #88a1f5; /* Bleu clair */
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 1rem;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #f6f7fa; /* Bleu plus foncé au survol */
+    }
 
 </style>
 </head>
@@ -207,6 +228,17 @@ function switchLang(lang) {
   <p><strong>École Polytechnique Universitaire de Lyon</strong> – Mechanical Engineering Student</p>
 </header>
 
+
+
+
+<nav>
+  <a href="#projets" data-fr="Projets" data-en="Projects">Projets</a>
+  <a href="#competences" data-fr="Compétences" data-en="Skills">Compétences</a>
+  <a href="#parcours" data-fr="Parcours" data-en="Background">Parcours</a>
+  <a href="#cv" data-fr="CV" data-en="Resume">CV</a>
+  <a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
+</nav>
+
 <!-- 🔹 Présentation FR -->
 <section id="presentation" class="lang" lang="fr" style="padding: 4rem 2rem; background-color: rgba(0, 0, 0, 0.5); color: white;">
   <p><strong>Étudiant en ingénierie mécanique</strong> – Passionné par la <strong>mécanique des fluides</strong> et les défis techniques complexes.</p>
@@ -226,16 +258,6 @@ function switchLang(lang) {
   <p>If you have any questions or would like to discuss potential collaboration, feel free to contact me through the <a href="#contact">Contact</a> section.</p>
   <p>Thank you for visiting, and I look forward to hearing from you!</p>
 </section>
-
-
-<nav>
-  <a href="#projets" data-fr="Projets" data-en="Projects">Projets</a>
-  <a href="#competences" data-fr="Compétences" data-en="Skills">Compétences</a>
-  <a href="#parcours" data-fr="Parcours" data-en="Background">Parcours</a>
-  <a href="#cv" data-fr="CV" data-en="Resume">CV</a>
-  <a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
-</nav>
-
 <!-- 🔹 Projets / Projects -->
 <section id="projets">
   <!-- 🇫🇷 Contenu français -->
