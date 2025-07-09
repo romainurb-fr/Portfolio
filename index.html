@@ -138,11 +138,21 @@ header {
     display: block;
   }
 
-  .view-project-btn {
+.project-row .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Centre horizontalement */
+  padding: 1.5rem;
+  min-width: 250px;
+  text-align: center;
+}
+
+.view-project-btn {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.6rem 1.2rem;
-  background-color: #88a1f5; /* bleu foncé */
+  background-color: #88a1f5; /* bleu doux */
   color: white;
   border: none;
   border-radius: 8px;
@@ -152,7 +162,7 @@ header {
 }
 
 .view-project-btn:hover {
-  background-color: #2563eb; /* bleu plus clair */
+  background-color: #2563eb; /* bleu plus foncé au survol */
 }
 </style>
 </head>
@@ -235,7 +245,7 @@ function switchLang(lang) {
       <div class="left">
         <h4>Optimisation de géométrie d'aile</h4>
         <p>Modèle réduit par POD et SOM sur géométries composites — Python / CFD / CSM</p>
-        <a href="projet6.html" class="view-project-btn">Voir le stage</a>
+        <a href="projet6.html" class="view-project-btn">Détails</a>
       </div>
       <div class="right">
         <img src="images/projet6.png" alt="Projet 6">
