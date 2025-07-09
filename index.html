@@ -9,8 +9,8 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   scroll-behavior: smooth;
-  background-color: #f0f4f8; /* Fond gris bleuté */
-  color: #1e293b;
+  background-color: #eaf4ff; /* Bleu très clair */
+  color: #1e3a8a; /* Bleu foncé pour le texte */
 }
 
 header {
@@ -24,7 +24,7 @@ header {
 }
 
 nav {
-  background-color: #64748b; /* Gris bleuté foncé */
+  background-color: #90cdf4; /* Bleu clair doux */
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -32,14 +32,14 @@ nav {
 }
 
 nav a {
-  color: white;
+  color: #1e3a8a;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.2s;
 }
 
 nav a:hover {
-  color: #f0f4f8;
+  color: #0f172a;
 }
 
 section {
@@ -50,14 +50,14 @@ section {
 }
 
 h2 {
-  border-bottom: 2px solid #cbd5e1;
+  border-bottom: 2px solid #cfe2f3;
   padding-bottom: 0.5rem;
   text-align: center;
-  color: #1e293b;
+  color: #1e3a8a;
 }
 
 footer {
-  background-color: #1e293b;
+  background-color: #1e3a8a;
   color: white;
   text-align: center;
   padding: 1rem;
@@ -74,8 +74,8 @@ footer {
 }
 
 .lang-switch button {
-  background-color: #e2e8f0;
-  color: #1e293b;
+  background-color: #dbeafe;
+  color: #1e3a8a;
   padding: 0.7rem 1.2rem;
   border-radius: 5px;
   cursor: pointer;
@@ -85,7 +85,7 @@ footer {
 }
 
 .lang-switch button:hover {
-  background-color: #64748b;
+  background-color: #60a5fa;
   color: white;
 }
 
@@ -93,11 +93,11 @@ footer {
 .project-row {
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid #cbd5e1;
+  border: 1px solid #cfe2f3;
   border-radius: 12px;
   overflow: hidden;
   margin-bottom: 2rem;
-  background-color: #f8fafc;
+  background-color: #f1f9ff;
 }
 
 .project-row:nth-child(even) {
@@ -120,12 +120,12 @@ footer {
 .project-row h4 {
   margin-top: 0;
   margin-bottom: 0.5rem;
-  color: #1e293b;
+  color: #1e3a8a;
 }
 
 .project-row a {
   text-decoration: none;
-  color: #1e293b;
+  color: #1e3a8a;
 }
 
 .project-row a:hover {
@@ -135,7 +135,7 @@ footer {
 .project-row p {
   margin: 0;
   font-size: 0.95rem;
-  color: #334155;
+  color: #1e3a8a;
 }
 
 .lang {
@@ -160,7 +160,7 @@ footer {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.6rem 1.2rem;
-  background-color: #64748b; /* Gris bleuté foncé */
+  background-color: #60a5fa; /* Bleu moyen clair */
   color: white;
   border: none;
   border-radius: 8px;
@@ -170,30 +170,28 @@ footer {
 }
 
 .view-project-btn:hover {
-  background-color: #475569;
+  background-color: #3b82f6;
+}
+
+/* Styles pour le bouton de téléchargement du CV */
+.button {
+  display: inline-block;
+  background-color: #60a5fa; /* Bleu clair */
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #3b82f6;
 }
 </style>
 
-  <link rel="icon" href="images/favicon.png" type="image/png">
-  <style>
-    /* Styles pour le bouton de téléchargement du CV */
-    .button {
-      display: inline-block;
-      background-color: #88a1f5; /* Bleu clair */
-      color: white;
-      padding: 0.7rem 1.5rem;
-      border-radius: 8px;
-      text-decoration: none;
-      margin-top: 1rem;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-
-    .button:hover {
-      background-color: #f6f7fa; /* Bleu plus foncé au survol */
-    }
-
-</style>
+<link rel="icon" href="images/favicon.png" type="image/png">
 </head>
 
 <script>
