@@ -17,6 +17,13 @@ header {
   position: relative;
 }
 
+.image-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+}
 nav {
   background-color: #1e3a8a; /* Bleu clair doux */
   display: flex;
