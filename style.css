@@ -48,11 +48,10 @@ nav a:hover {
 
 /* Sections centrées avec espacements contrôlés */
 section {
-  padding: 4rem 2rem;
+  padding: 2rem 1rem;
   max-width: 1000px;
-  margin: 0rem auto 0rem auto;
+  margin: 0rem auto;
   background-color: transparent;
-  border: 2px solid #070707; /* Bordure bleue autour de chaque section */
 }
 
 h2 {    
