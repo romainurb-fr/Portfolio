@@ -187,14 +187,14 @@ footer {
   background-color: #3b82f6;
 }
 
-.back-button {
+.back-to-portfolio {
   position: fixed;
   bottom: 20px;
   left: 20px;
   z-index: 1000;
 }
 
-.back-button a {
+.back-to-portfolio a {
   background-color: #dbeafe;
   color: #1e3a8a;
   padding: 0.7rem 1.2rem;
@@ -206,7 +206,7 @@ footer {
   display: inline-block;
 }
 
-.back-button a:hover {
+.back-to-portfolio a:hover {
   background-color: #60a5fa;
   color: white;
 }
