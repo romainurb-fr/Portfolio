@@ -7,16 +7,23 @@ body {
   color: #1e293b;
 }
 
+/* Par défaut, ne pas afficher l'image dans le header */
 header {
-  background-image: url("images/header-background.png");
-  background-size: cover;
-  background-position: center;
+  background-image: none;
   color: white;
   padding: 4rem 2rem;
   text-align: center;
   position: relative;
 }
 
+/* Cibler la page d'accueil avec la classe 'home-page' */
+.home-page header {
+  background-image: url("images/header-background.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Style du menu de navigation */
 nav {
   background-color: #90cdf4; /* Bleu clair doux */
   display: flex;
@@ -36,6 +43,7 @@ nav a:hover {
   color: #0f172a;
 }
 
+/* Style des sections */
 section {
   padding: 4rem 2rem;
   max-width: 1000px;
@@ -50,6 +58,7 @@ h2 {
   color: #1e3a8a;
 }
 
+/* Style du footer */
 footer {
   background-color: #1e3a8a;
   color: white;
@@ -58,6 +67,7 @@ footer {
   margin-top: 3rem;
 }
 
+/* Styles pour le bouton de changement de langue */
 .lang-switch {
   position: fixed;
   bottom: 20px;
@@ -132,6 +142,7 @@ footer {
   color: #1e3a8a;
 }
 
+/* Cacher les sections non activées */
 .lang {
   display: none;
 }
@@ -150,6 +161,7 @@ footer {
   text-align: center;
 }
 
+/* Style du bouton "Voir le projet" */
 .view-project-btn {
   display: inline-block;
   margin-top: 1rem;
@@ -183,3 +195,10 @@ footer {
 .button:hover {
   background-color: #3b82f6;
 }
+/* Styles pour les icônes de réseaux sociaux */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}   
