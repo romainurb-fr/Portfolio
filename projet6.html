@@ -4,20 +4,25 @@
   <meta charset="UTF-8">
   <title>Projet 6 - stage </title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      scroll-behavior: smooth;
-    }
-    header {
-      background-color: #88a1f5;
-      color: black;
-      padding: 2rem;
-      text-align: center;
-    }
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  scroll-behavior: smooth;
+  background-color: #f8fafc; /* gris très clair */
+  color: #1e293b; /* texte standard */
+}
+
+header {
+  background-color: #88a1f5; /* bleu doux */
+  color: black;
+  padding: 2rem;
+  text-align: center;
+}
+
 nav {
-  background-color: #88a1f5; /* Bleu clair pour la bande de menu */
+  background-color: #88a1f5; /* bleu doux */
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -25,43 +30,68 @@ nav {
 }
 
 nav a {
-  color: black;
+  color: #1e293b;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.2s;
 }
-    section {
-      padding: 4rem 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      border-bottom: 2px solid #e2e8f0;
-      padding-bottom: 0.5rem;
-    }
-    footer {
-      background-color: #1e293b;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 3rem;
-    }
-    a.button {
-      display: inline-block;
-      background-color: #3b82f6;
-      color: white;
-      padding: 0.7rem 1.5rem;
-      border-radius: 8px;
-      text-decoration: none;
-      margin-top: 1rem;
-    }
-    .lang { display: none; }
-    .lang.active { display: block; }
-    .image-center {
+
+nav a:hover {
+  color: #2563eb; /* bleu vif au survol */
+}
+
+section {
+  padding: 4rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  color: #1e293b;
+}
+
+footer {
+  background-color: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+a.button {
+  display: inline-block;
+  background-color: #3b82f6; /* bouton vif */
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+a.button:hover {
+  background-color: #2563eb; /* bouton plus foncé au survol */
+}
+
+.lang {
+  display: none;
+}
+
+.lang.active {
+  display: block;
+}
+
+.image-center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 600px;
 }
+
   </style>
 </head>
 <body>
