@@ -137,6 +137,7 @@ nav a {
 
 
 <!--  English Version -->
+<!-- 🔹 English Version -->
 <div class="lang" lang="en">
   <header>
     <h1>Model Order Reduction of Composite Wings</h1>
@@ -145,30 +146,58 @@ nav a {
   </header>
 
   <nav>
-    <a href="#Contexte">Introduction</a>
-    <a href="#Problématique">Methodology</a>
-    <a href="#Méthodes">Results</a>
+    <a href="#Contexte">Context</a>
+    <a href="#Problématique">Problem</a>
+    <a href="#Méthodes">Methods</a>
+    <a href="#Résultats">Results</a>
     <a href="#Ce que j'ai appris">Conclusion</a>
   </nav>
 
   <section id="Contexte">
     <h2>Context</h2>
+    <p>Aviation is a highly polluting sector, and reducing its environmental impact has become a priority. Engineers increasingly rely on numerical simulations to design more efficient and sustainable aircraft, but these simulations generate enormous volumes of data. Composite materials, such as CFRP, though promising, remain complex to model and certify. To overcome these challenges, data-driven approaches such as dimensionality reduction and aerodynamic mode identification help reduce computational costs while maintaining accuracy.</p>
+    <img src="images/img_stage/schemaparm.png" alt="Schematic representation of the wing parameters" class="image-center">
   </section>
 
   <section id="Problématique">
     <h2>Problem</h2>
+    <p>How can we reduce the order of models used to simulate composite wings while preserving the accuracy of the results?</p>
   </section>
 
   <section id="Méthodes">
     <h2>Methods</h2>
+    <p>To address this challenge, I used a two-step approach:</p>
+    <ul>
+      <li>Use of data-driven methods for dimensionality reduction: identification of dominant behaviors in the data using <strong>POD</strong> (Proper Orthogonal Decomposition) and <strong>SOM</strong> (Self-Organizing Map) to create relevant and exploitable reduced models.</li>
+      <li>Application of these reduced models to aerodynamic simulations to evaluate their performance and accuracy in reconstructing aeroelastic behaviors.</li>
+    </ul>
+    <img src="images/img_stage/ff.png" alt="Scientific approach" class="image-center">
   </section>
 
   <section id="Résultats">
     <h2>Results</h2>
+    <ul>
+      <li>Two reduced models were implemented:</li>
+      <ul>
+        <li>One based on reconstruction by <strong>POD</strong> (Proper Orthogonal Decomposition).</li>
+        <li>One highlighted by <strong>SOM</strong> (Self-Organizing Map), reconstructed solely by varying the length of the wing.</li>
+      </ul>
+      <li>The results show that these models effectively capture the aeroelastic behaviors of composite wings while significantly reducing computation time. Some key results include pressure distribution and Mach number across the wing, as well as the variation of the pressure coefficient on sections of the wing for the original and POD-reconstructed geometries.</li>
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
+        <img src="images/img_stage/machPOD.png" alt="Mach distribution POD" style="width: 600px; height: auto;">
+        <img src="images/img_stage/PODpressure.png" alt="Pressure POD" style="width: 600px; height: auto;">
+        <img src="images/img_stage/cp.png" alt="Pressure coefficient" style="width: 600px; height: auto;">
+      </div>
+      <li>These approaches offer a viable alternative to traditional methods, opening the door to faster and less costly simulations.</li>
+    </ul>
   </section>
 
   <section id="Ce que j'ai appris">
     <h2>What I Learned</h2>
+    <ul>
+      <li>This internship gave me the opportunity to deepen my knowledge in aeroelastic simulations, particularly on fluid-structure interaction using the DASH software developed by the lab.</li>
+      <li>I also enhanced my programming skills, especially in Python for post-simulation result processing, and in Linux for managing and running simulations under DASH.</li>
+    </ul>
   </section>
 
   <footer>
@@ -176,6 +205,7 @@ nav a {
     <a href="index.html" class="button">Back to Portfolio</a>
   </footer>
 </div>
+
 
 <!-- 🔁 Script pour afficher automatiquement la langue choisie -->
 <script>
