@@ -128,28 +128,42 @@ header {
     font-size: 0.95rem;
     color: #334155;
   }
+
+  /* Cacher toutes les sections sauf celles activées */
+  .lang {
+    display: none;
+  }
+
+  .lang.active {
+    display: block;
+  }
 </style>
 </head>
 
 <script>
 function switchLang(lang) {
+  // Cacher toutes les sections
   document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
+
+  // Afficher les sections correspondant à la langue choisie
   document.querySelectorAll(`[lang="${lang}"]`).forEach(el => el.classList.add('active'));
 
-  // Met à jour le texte des liens de menu
+  // Mettre à jour le texte des liens de menu
   document.querySelectorAll('nav a').forEach(el => {
     el.textContent = el.getAttribute(`data-${lang}`);
   });
 
+  // Sauvegarder la langue choisie dans le localStorage
   localStorage.setItem('lang', lang);
 }
 </script>
+
 <body>
 
 <!-- Boutons flottants en bas à droite -->
 <div class="lang-switch">
-  <button onclick="setLanguage('fr')">Français</button>
-  <button onclick="setLanguage('en')">English</button>
+  <button onclick="switchLang('fr')">Français</button>
+  <button onclick="switchLang('en')">English</button>
 </div>
 
   <!-- 🔹 En-tête -->
@@ -181,12 +195,11 @@ function switchLang(lang) {
   <a href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
 </nav>
 
-<!-- 🔹 Projets / Projects – Section mixte -->
+<!-- 🔹 Projets / Projects -->
 <section id="projets">
   <!-- 🇫🇷 Contenu français -->
   <div class="lang" lang="fr">
     <h2>Projets</h2>
-
     <h3>Lors de Stage</h3>
     <div class="project-row">
       <div class="left">
@@ -251,7 +264,7 @@ function switchLang(lang) {
     </div>
   </div>
 
-  <!-- 🇬🇧 English content -->
+  <!-- 🇬🇧 Contenu en anglais -->
   <div class="lang" lang="en">
     <h2>Projects</h2>
 
@@ -320,9 +333,8 @@ function switchLang(lang) {
   </div>
 </section>
 
- <!-- 🔹 Compétences / Skills -->
+<!-- 🔹 Compétences / Skills -->
 <section id="competences">
-  <!-- 🇫🇷 Contenu français -->
   <div class="lang" lang="fr">
     <h2>Compétences</h2>
     <ul>
@@ -332,7 +344,6 @@ function switchLang(lang) {
     </ul>
   </div>
 
-  <!-- 🇬🇧 English content -->
   <div class="lang" lang="en">
     <h2>Skills</h2>
     <ul>
@@ -345,7 +356,6 @@ function switchLang(lang) {
 
 <!-- 🔹 Parcours académique / Academic Background -->
 <section id="parcours">
-  <!-- 🇫🇷 Contenu français -->
   <div class="lang" lang="fr">
     <h2>Parcours académique</h2>
     <p><strong>École Polytechnique Universitaire de Lyon</strong> – Génie Mécanique (2023–2026)</p>
@@ -353,7 +363,6 @@ function switchLang(lang) {
     <p><strong>Bac Scientifique mention bien euro anglais</strong> – Lycée Théodore Aubanel (2019)</p>
   </div>
 
-  <!-- 🇬🇧 English content -->
   <div class="lang" lang="en">
     <h2>Academic Background</h2>
     <p><strong>École Polytechnique Universitaire de Lyon</strong> – Mechanical Engineering (2023–2026)</p>
@@ -364,7 +373,6 @@ function switchLang(lang) {
 
 <!-- 🔹 CV / Resume -->
 <section id="cv">
-  <!-- 🇫🇷 Contenu français -->
   <div class="lang" lang="fr">
     <h2>Mon CV</h2>
     <p>Tu peux télécharger mon CV ici :</p>
@@ -372,7 +380,6 @@ function switchLang(lang) {
     <a class="button" href="cv_romain_urbaniak_en.pdf" download>Download my resume</a>
   </div>
 
-  <!-- 🇬🇧 English content -->
   <div class="lang" lang="en">
     <h2>My Resume</h2>
     <p>You can download my resume here:</p>
@@ -383,7 +390,6 @@ function switchLang(lang) {
 
 <!-- 🔹 Contact -->
 <section id="contact">
-  <!-- 🇫🇷 Contenu français -->
   <div class="lang" lang="fr">
     <h2>Contact</h2>
     <p>Email : <a href="mailto:romain.urbaniak@etu.univ-lyon1.fr">romain.urbaniak@etu.univ-lyon1.fr</a></p>
@@ -391,7 +397,6 @@ function switchLang(lang) {
     <p>GitHub : <a href="https://github.com/romainurbaniak" target="_blank">github.com/romainurbaniak</a></p>
   </div>
 
-  <!-- 🇬🇧 English content -->
   <div class="lang" lang="en">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:romain.urbaniak@etu.univ-lyon1.fr">romain.urbaniak@etu.univ-lyon1.fr</a></p>
@@ -404,6 +409,7 @@ function switchLang(lang) {
 <footer>
   &copy; 2025 Romain Urbaniak — All rights reserved
 </footer>
+
 <script>
   // Charge la langue préférée de l'utilisateur
   const savedLang = localStorage.getItem('lang') || 'fr';
