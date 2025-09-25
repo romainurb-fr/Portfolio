@@ -66,28 +66,50 @@ function switchLang(lang) {
 <section id="methodologie">
   <h2>Méthodologie</h2>
   <p>
-    Après avoir établi l’équation différentielle du problème à partir des lois
-    de Fourier et Newton, la MEF a été appliquée sous deux formulations :
+    L’étude a été menée en deux étapes afin de comparer différentes approches de la
+    méthode des éléments finis (MEF) appliquée à la conduction-convection thermique :
   </p>
   <ul>
-    <li><strong>Éléments finis P1 (linéaires)</strong> : discrétisation simple, peu coûteuse mais moins précise.</li>
-    <li><strong>Éléments finis P2 (quadratiques)</strong> : polynômes d’interpolation d’ordre 2 offrant une meilleure approximation.</li>
+    <li>
+      <strong>Cas 1D :</strong> le barreau métallique est modélisé en une seule
+      dimension. Deux formulations ont été utilisées :
+      <em>P1 (linéaire)</em> avec interpolation simple, et
+      <em>P2 (quadratique)</em> permettant une meilleure précision avec le même nombre
+      d’éléments.
+    </li>
+    <li>
+      <strong>Cas 2D :</strong> la géométrie est étendue en deux dimensions afin de
+      prendre en compte plus finement la répartition spatiale de la température.
+      Un maillage triangulaire et quadrangulaire a été utilisé pour discrétiser le
+      domaine et résoudre l’équation par MEF.
+    </li>
   </ul>
   <p>
-    La résolution a été effectuée par factorisation LU et implémentée en Python.
+    Les deux approches ont été implémentées en Python avec une résolution par
+    <strong>factorisation LU</strong>.
   </p>
 </section>
 
 <section id="resultats">
   <h2>Résultats</h2>
+  <h3>Cas 1D</h3>
   <p>
-    Les profils de température obtenus sont en accord avec la solution
-    analytique, avec une quasi-superposition des courbes. La méthode P1 devient
-    plus précise en augmentant le nombre d’éléments, mais au prix d’un coût de
-    calcul élevé. La méthode P2 fournit des résultats plus lisses et précis pour
-    un même nombre d’éléments, confirmant son ordre de convergence plus élevé
-    (ordre 4 contre ordre 2 pour le P1).
+    Dans le cas 1D, les profils de température décroissent progressivement le long
+    du barreau. En P1, la précision dépend fortement du raffinement du maillage,
+    tandis qu’en P2, les résultats sont plus lisses et plus proches de la solution
+    exacte pour un même nombre d’éléments.
   </p>
+  <img src="resultats_1D.png" alt="Évolution de la température en 1D" class="result-img">
+
+  <h3>Cas 2D</h3>
+  <p>
+    Dans le cas 2D, la répartition spatiale de la température est représentée sur
+    des maillages triangulaires et quadrangulaires. Les zones proches de la source
+    thermique apparaissent plus chaudes, avec une dissipation progressive vers les
+    bords. Cette modélisation met en évidence l’intérêt d’un maillage adapté pour
+    améliorer la précision des résultats.
+  </p>
+  <img src="resultats_2D.png" alt="Évolution de la température en 2D" class="result-img">
 </section>
 
 <section id="conclusion">
