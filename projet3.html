@@ -60,7 +60,7 @@ function switchLang(lang) {
     de la méthode des éléments finis (MEF) et de comparer la précision entre une
     approche d’ordre 1 et une approche d’ordre 2.
   </p>
-  <img src="schéma1.png" alt="Schéma de conduction et convection thermique" class="intro-img">
+  <img src="images/imageschaleur/schéma1.png" alt="Schéma de conduction et convection thermique" class="intro-img">
 </section>
 
 <section id="methodologie">
@@ -99,7 +99,7 @@ function switchLang(lang) {
     tandis qu’en P2, les résultats sont plus lisses et plus proches de la solution
     exacte pour un même nombre d’éléments.
   </p>
-  <img src="resultats_1D.png" alt="Évolution de la température en 1D" class="result-img">
+  <img src="images/imageschaleur/exacte2adia.png" alt="Évolution de la température en 1D" class="result-img">
 
   <h3>Cas 2D</h3>
   <p>
@@ -109,7 +109,7 @@ function switchLang(lang) {
     bords. Cette modélisation met en évidence l’intérêt d’un maillage adapté pour
     améliorer la précision des résultats.
   </p>
-  <img src="resultats_2D.png" alt="Évolution de la température en 2D" class="result-img">
+  <img src="images/imageschaleur/sectionesansisolant.png" alt="Évolution de la température en 2D" class="result-img">
 </section>
 
 <section id="conclusion">
@@ -133,7 +133,11 @@ function switchLang(lang) {
   <header>
     <h1>Modeling and Solving the Heat Equation</h1>
     <a href="rapport/CR_Mnm.pdf" class="button">Download PDF Report (French only)</a>
-    <p>This project was carried out over a period of four months as part of my training in Numerical Methods for Engineers at the École Polytechnique Universitaire de Lyon.</p>
+    <p>
+      This project was carried out over a four-month period as part of my training in
+      <strong>Numerical Methods for Engineers</strong> at the École Polytechnique
+      Universitaire de Lyon.
+    </p>
   </header>
 
   <nav>
@@ -145,31 +149,75 @@ function switchLang(lang) {
 
   <section id="introduction">
     <h2>Introduction</h2>
+    <p>
+      This project focuses on the study of <strong>temperature distribution</strong> in a
+      metallic bar subjected to conduction, convection, and insulation. The main goal was
+      to model the problem using the <strong>Finite Element Method (FEM)</strong> and to
+      compare the accuracy of a <em>first-order approach (P1)</em> with a
+      <em>second-order approach (P2)</em>.
+    </p>
+    <img src="images/imageschaleur/schéma1.png" alt="Heat conduction and convection diagram" class="intro-img">
   </section>
 
   <section id="methodology">
     <h2>Methodology</h2>
+    <p>
+      The study was carried out in two steps in order to compare different FEM
+      approaches applied to heat conduction and convection:
+    </p>
+    <ul>
+      <li>
+        <strong>1D Case:</strong> the metallic bar is modeled in one dimension. Two
+        formulations were used:
+        <em>P1 (linear)</em> with simple interpolation, and
+        <em>P2 (quadratic)</em> allowing higher accuracy with the same number of
+        elements.
+      </li>
+      <li>
+        <strong>2D Case:</strong> the geometry is extended to two dimensions to better
+        capture the spatial distribution of temperature. Both triangular and
+        quadrangular meshes were used to discretize the domain and solve the equation
+        with FEM.
+      </li>
+    </ul>
+    <p>
+      Both approaches were implemented in <strong>Python</strong> and solved using
+      <strong>LU factorization</strong>.
+    </p>
   </section>
 
   <section id="results">
     <h2>Results</h2>
+    <h3>1D Case</h3>
+    <p>
+      In the 1D case, temperature profiles decrease gradually along the bar. With P1,
+      accuracy strongly depends on mesh refinement, while with P2 the results are
+      smoother and closer to the exact solution for the same number of elements.
+    </p>
+    <img src="images/imageschaleur/exacte2adia.png" alt="1D temperature evolution" class="result-img">
+
+    <h3>2D Case</h3>
+    <p>
+      In the 2D case, the spatial distribution of temperature is represented using both
+      triangular and quadrangular meshes. Hotter regions appear near the thermal source,
+      with gradual dissipation towards the boundaries. This highlights the importance of
+      choosing an appropriate mesh to improve accuracy.
+    </p>
+    <img src="images/imageschaleur/sectionesansisolant.png" alt="2D temperature evolution" class="result-img">
   </section>
 
   <section id="conclusion">
     <h2>Conclusion</h2>
+    <p>
+      This project demonstrated the application of FEM to a heat conduction-convection
+      problem and compared two numerical approaches. Results show that quadratic
+      elements (P2) provide significantly higher accuracy for a moderate computational
+      cost. The choice of element order must therefore be adapted to both the desired
+      level of accuracy and the available computational resources.
+    </p>
   </section>
 
   <footer>
     <p>&copy; 2025 Romain Urbaniak. All rights reserved.</p>
   </footer>
 </div>
-
-<!-- 🔁 Script pour afficher automatiquement la langue choisie -->
-<script>
-  const lang = localStorage.getItem('lang') || 'fr';
-  document.querySelectorAll('.lang').forEach(el => el.classList.remove('active'));
-  document.querySelectorAll(`[lang="${lang}"]`).forEach(el => el.classList.add('active'));
-</script>
-
-</body>
-</html>
