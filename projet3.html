@@ -40,7 +40,7 @@ function switchLang(lang) {
 <div class="lang" lang="fr">
   <header>
     <h1>Modélisation et Résolution de l'équation de la chaleur</h1>
-    <a href="rapport/CR_Mnm.pdf" class="button">Télécharger le Rapport PDF (anglais)</a>
+    <a href="rapport/CR_Mnm.pdf" class="button">Télécharger le Rapport PDF (français)</a>
     <p>Ce projet a été réalisé sur une durée de 4 mois dans le cadre de ma formation en Méthode Numérique pour Ingénieurs au sein de l'École Polytechnique Universitaire de Lyon.</p>
   </header>
 
@@ -51,23 +51,54 @@ function switchLang(lang) {
     <a href="#conclusion">Conclusion</a>
   </nav>
 
-  <section id="introduction">
-    <h2>Introduction</h2>
-    <p>Cette étude vise à modéliser et résoudre l'équation de la chaleur dans un domaine donné, en utilisant des méthodes numériques avancées basées sur la méthode des éléments finis d'ordre 1 et 2.</p>
-  </section>
+<section id="introduction">
+  <h2>Introduction</h2>
+  <p>
+    Ce projet porte sur l’étude de la répartition de la température dans un
+    barreau métallique soumis à différents échanges thermiques (conduction,
+    convection et isolation). L’objectif était de modéliser le problème à l’aide
+    de la méthode des éléments finis (MEF) et de comparer la précision entre une
+    approche d’ordre 1 et une approche d’ordre 2.
+  </p>
+</section>
 
-  <section id="methodologie">
-    <h2>Méthodologie</h2>
-    <p>Nous avons utilisé la méthode des éléments finis pour discrétiser le domaine et appliquer les conditions aux limites appropriées. Des tests de convergence ont été réalisés pour valider notre approche. L'objectif étant de comparer les performances des 2 approches en termes de précision et de convergence.</p>
-  </section>
+<section id="methodologie">
+  <h2>Méthodologie</h2>
+  <p>
+    Après avoir établi l’équation différentielle du problème à partir des lois
+    de Fourier et Newton, la MEF a été appliquée sous deux formulations :
+  </p>
+  <ul>
+    <li><strong>Éléments finis P1 (linéaires)</strong> : discrétisation simple, peu coûteuse mais moins précise.</li>
+    <li><strong>Éléments finis P2 (quadratiques)</strong> : polynômes d’interpolation d’ordre 2 offrant une meilleure approximation.</li>
+  </ul>
+  <p>
+    La résolution a été effectuée par factorisation LU et implémentée en Python.
+  </p>
+</section>
 
-  <section id="resultats">
-    <h2>Résultats</h2>
-  </section>
+<section id="resultats">
+  <h2>Résultats</h2>
+  <p>
+    Les profils de température obtenus sont en accord avec la solution
+    analytique, avec une quasi-superposition des courbes. La méthode P1 devient
+    plus précise en augmentant le nombre d’éléments, mais au prix d’un coût de
+    calcul élevé. La méthode P2 fournit des résultats plus lisses et précis pour
+    un même nombre d’éléments, confirmant son ordre de convergence plus élevé
+    (ordre 4 contre ordre 2 pour le P1).
+  </p>
+</section>
 
-  <section id="conclusion">
-    <h2>Conclusion</h2>
-  </section>
+<section id="conclusion">
+  <h2>Conclusion</h2>
+  <p>
+    Ce projet a permis d’appliquer la MEF à un problème de conduction-convection
+    et de comparer deux approches numériques. Les résultats montrent que les
+    éléments quadratiques offrent une précision supérieure pour un effort de
+    calcul modéré. Le choix de l’ordre de la méthode doit ainsi être adapté aux
+    besoins en précision et aux ressources disponibles.
+  </p>
+</section>
 
   <footer>
     <p>&copy; 2025 Romain Urbaniak. Tous droits réservés.</p>
